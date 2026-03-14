@@ -13,7 +13,7 @@ public class ModBlocks {
 
 
     private static <T extends Block> void registerBlockItem(String name, DeferredBlock<T> block ) {
-        ModItems.ITEMS.register;
+        ModItems.ITEMS.register();
     }
 
 
