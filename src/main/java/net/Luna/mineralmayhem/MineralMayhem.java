@@ -1,5 +1,7 @@
-package com.example.examplemod;
+package net.Luna.mineralmayhem;
 
+import net.Luna.mineralmayhem.Blocks.ModBlocks;
+import net.Luna.mineralmayhem.item.ModItems;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -18,7 +20,7 @@ import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
-@Mod(com.example.examplemod.MineralMayhem.MOD_ID)
+@Mod(MineralMayhem.MOD_ID)
 public class MineralMayhem {
     // Define mod id in a common place for everything to reference
     public static final String MOD_ID = "mineralmayhem";
@@ -36,11 +38,16 @@ public class MineralMayhem {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+
+        ModBlocks.register(modEventBus);
+
+        ModItems.register(modEventBus);
+
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
-        modContainer.registerConfig(ModConfig.Type.COMMON, com.example.examplemod.Config.SPEC);
+        modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
