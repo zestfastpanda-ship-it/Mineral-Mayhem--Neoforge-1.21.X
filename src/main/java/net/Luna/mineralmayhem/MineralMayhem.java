@@ -1,6 +1,7 @@
 package net.Luna.mineralmayhem;
 
 import net.Luna.mineralmayhem.Blocks.ModBlocks;
+import net.Luna.mineralmayhem.CreativeModeTabs.MineralMayhemCreativeModeTabs;
 import net.Luna.mineralmayhem.item.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -41,8 +42,10 @@ public class MineralMayhem {
         NeoForge.EVENT_BUS.register(this);
 
 
-        ModBlocks.register(modEventBus);
+        MineralMayhemCreativeModeTabs.register((modEventBus));
+
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
 
         // Register the item to a creative tab
