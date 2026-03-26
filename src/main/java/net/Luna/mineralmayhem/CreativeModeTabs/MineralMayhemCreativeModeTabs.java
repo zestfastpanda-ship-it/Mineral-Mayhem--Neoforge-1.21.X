@@ -28,6 +28,7 @@ public class MineralMayhemCreativeModeTabs {
                         output.accept(ModBlocks.LIMESTONE_BLOCK);
                         output.accept(ModBlocks.SHALE_BLOCK);
                         output.accept(ModBlocks.MUDSTONE_BLOCK);
+                        output.accept(ModBlocks.MARBLE_BLOCK);
                     }).build());
 
     public static final Supplier<CreativeModeTab>  MM_NATURALMINERALS_TAB = CREATIVE_MODE_TAB.register("mm_naturalminerals_tab",

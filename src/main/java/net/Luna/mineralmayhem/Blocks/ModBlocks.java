@@ -28,6 +28,10 @@ public class ModBlocks {
     public static final DeferredBlock<Block> MUDSTONE_BLOCK = registerBlock("mudstone_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> MARBLE_BLOCK = registerBlock("marble_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops()));
+
 
 
 
