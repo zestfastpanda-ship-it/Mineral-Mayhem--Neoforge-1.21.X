@@ -26,6 +26,7 @@ public class MineralMayhemCreativeModeTabs {
                     .displayItems((parameters, output) -> {
                         output.accept(ModBlocks.KIMBERLITE_BLOCK);
                         output.accept(ModBlocks.LIMESTONE_BLOCK);
+                        output.accept(ModBlocks.SHALE_BLOCK);
                     }).build());
 
     public static final Supplier<CreativeModeTab>  MM_NATURALMINERALS_TAB = CREATIVE_MODE_TAB.register("mm_naturalminerals_tab",

@@ -22,6 +22,9 @@ public class ModBlocks {
     public static final DeferredBlock<Block> LIMESTONE_BLOCK = registerBlock("limestone_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> SHALE_BLOCK = registerBlock("shale_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops()));
 
 
 

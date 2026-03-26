@@ -1,9 +1,12 @@
 {
-  "item.mineralmayhem.kimberlite": "Kimberlite",
-
   "block.mineralmayhem.kimberlite_block": "Kimberlite",
   "block.mineralmayhem.limestone_block": "Limestone",
+  "block.mineralmayhem.shale_block": "Shale",
 
+  "creativetab.mineralmayhem.natural_minerals": "Natural Minerals",
   "creativetab.mineralmayhem.rocks": "Rocks",
-  "creativetab.mineralmayhem.natural_minerals": "Natural Minerals"
+
+  "item.mineralmayhem.kimberlite": "Kimberlite",
+  "item.mineralmayhem.limestone": "Limestone",
+  "item.mineralmayhem.shale": "Shale"
 }

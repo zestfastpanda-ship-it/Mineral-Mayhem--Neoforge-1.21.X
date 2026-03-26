@@ -14,6 +14,9 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> LIMESTONE = ITEMS.register("limestone",
             () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> SHALE = ITEMS.register("shale",
+            () -> new Item(new Item.Properties()));
+
 
 
 
