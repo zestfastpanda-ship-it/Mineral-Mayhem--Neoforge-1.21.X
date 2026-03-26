@@ -19,6 +19,10 @@ public class ModBlocks {
     public static final DeferredBlock<Block> KIMBERLITE_BLOCK = registerBlock("kimberlite_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> LIMESTONE_BLOCK = registerBlock("limestone_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops()));
+
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block ){

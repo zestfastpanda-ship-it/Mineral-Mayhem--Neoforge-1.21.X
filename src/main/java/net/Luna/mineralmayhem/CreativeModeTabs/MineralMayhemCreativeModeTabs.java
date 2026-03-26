@@ -25,12 +25,13 @@ public class MineralMayhemCreativeModeTabs {
                     .title(Component.translatable("creativetab.mineralmayhem.rocks"))
                     .displayItems((parameters, output) -> {
                         output.accept(ModBlocks.KIMBERLITE_BLOCK);
+                        output.accept(ModBlocks.LIMESTONE_BLOCK);
                     }).build());
 
     public static final Supplier<CreativeModeTab>  MM_NATURALMINERALS_TAB = CREATIVE_MODE_TAB.register("mm_naturalminerals_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.KIMBERLITE_BLOCK.get()))
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(MineralMayhem.MOD_ID, "mm_rocks_tab"))
-                    .title(Component.translatable("creativetab.mineralmayhem.naturalminerals"))
+                    .title(Component.translatable("creativetab.mineralmayhem.natural_minerals"))
                     .displayItems((parameters, output) -> {
                         output.accept(ModBlocks.KIMBERLITE_BLOCK);
                     }).build());
