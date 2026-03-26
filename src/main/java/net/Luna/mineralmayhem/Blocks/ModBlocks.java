@@ -34,6 +34,9 @@ public class ModBlocks {
     public static final DeferredBlock<Block> GABBRO_BLOCK = registerBlock("gabbro_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> GNEISS_BLOCK = registerBlock("gneiss_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops()));
 
 
 
