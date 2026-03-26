@@ -20,6 +20,8 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> MARBLE = ITEMS.register("marble",
             () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> GABBRO = ITEMS.register("gabbro",
+            () -> new Item(new Item.Properties()));
 
 
 
